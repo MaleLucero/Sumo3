@@ -43,6 +43,12 @@ def DDLR():
         retroceder()
         ro.esperar(0.1)
         return
+    
+def Empujar():
+    ro.setVel(100, 100)
+    ro.esperar(1)
+    ro.setVel(-30, -30)
+    ro.esperar(.05)
 
 #-----MainLoop------#
 while ro.step():
