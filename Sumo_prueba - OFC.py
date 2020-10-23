@@ -17,6 +17,8 @@ def NoCaer():
     if ro.getColorPiso()>85:
       ro.setVel(0, 0)
       ro.esperar(0.2)
+      retroceder()
+      ro.esperar(0.2)
       girarD()
       ro.esperar(1.5)
 
